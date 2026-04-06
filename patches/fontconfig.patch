@@ -10,7 +10,7 @@ index 6d4cd32..3e88fe0 100644
 -	fc-cache fc-cat fc-conflist fc-list fc-match \
 -	fc-pattern fc-query fc-scan fc-validate conf.d \
 -	its po po-conf test
-+SUBDIRS=fontconfig src
++SUBDIRS=fontconfig fc-case fc-lang fc-const src
  if ENABLE_DOCS
  SUBDIRS += doc
  endif

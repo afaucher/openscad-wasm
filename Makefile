@@ -163,49 +163,49 @@ libs/emscripten-crossfile.meson:
 	cp emscripten-crossfile.meson $@
 
 libs/cairo:
-	git clone --recurse https://gitlab.freedesktop.org/cairo/cairo.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone --recurse https://gitlab.freedesktop.org/cairo/cairo.git ${SHALLOW} --branch 1.18.0 --single-branch $@
 
 libs/libffi:
-	git clone https://github.com/libffi/libffi.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://github.com/libffi/libffi.git ${SHALLOW} --branch v3.4.4 --single-branch $@
 
 libs/cgal:
 	git clone https://github.com/CGAL/cgal.git ${SHALLOW} --branch v6.0.1 --single-branch $@
 
 libs/eigen:
-	git clone https://gitlab.com/libeigen/eigen.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://gitlab.com/libeigen/eigen.git ${SHALLOW} --branch 3.4.0 --single-branch $@
 
 libs/fontconfig:
-	git clone https://gitlab.freedesktop.org/fontconfig/fontconfig ${SHALLOW} ${SINGLE_BRANCH_MAIN} $@
+	git clone https://gitlab.freedesktop.org/fontconfig/fontconfig ${SHALLOW} --branch 2.14.2 --single-branch $@
 	git -C $@ apply ../../patches/fontconfig.patch
 
 libs/freetype:
-	git clone https://github.com/freetype/freetype.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://github.com/freetype/freetype.git ${SHALLOW} --branch VER-2-12-1 --single-branch $@
 # git clone https://gitlab.freedesktop.org/freetype/freetype.git ${SHALLOW} ${SINGLE_BRANCH} $@
 
 libs/glib:
 	test -d $@ || git clone https://github.com/kleisauke/glib.git ${SHALLOW} --branch wasm-vips-2.83.2 --single-branch $@
 
 libs/harfbuzz:
-	git clone https://github.com/harfbuzz/harfbuzz.git ${SHALLOW} ${SINGLE_BRANCH_MAIN} $@
+	git clone https://github.com/harfbuzz/harfbuzz.git ${SHALLOW} --branch 8.3.0 --single-branch $@
 
 libs/lib3mf:
 	git clone --recurse https://github.com/3MFConsortium/lib3mf.git ${SHALLOW} --branch v2.3.2 $@
 	git -C $@ apply ../../patches/lib3mf.patch
 
 libs/libexpat:
-	git clone  https://github.com/libexpat/libexpat ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone  https://github.com/libexpat/libexpat ${SHALLOW} --branch R_2_5_0 --single-branch $@
 
 libs/liblzma:
-	git clone https://github.com/kobolabs/liblzma.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://github.com/kobolabs/liblzma.git ${SHALLOW} --branch v5.4.1 --single-branch $@
 
 libs/libzip:
-	git clone https://github.com/nih-at/libzip.git ${SHALLOW} ${SINGLE_BRANCH_MAIN} $@
+	git clone https://github.com/nih-at/libzip.git ${SHALLOW} --branch v1.10.1 --single-branch $@
 
 libs/zlib:
 	git clone https://github.com/madler/zlib.git ${SHALLOW} --branch v1.2.13 --single-branch $@
 
 libs/libxml2:
-	git clone https://gitlab.gnome.org/GNOME/libxml2.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://gitlab.gnome.org/GNOME/libxml2.git ${SHALLOW} --branch v2.12.5 --single-branch $@
 
 libs/doubleconversion:
 	git clone https://github.com/google/double-conversion ${SHALLOW} --branch v3.3.1 --single-branch $@
