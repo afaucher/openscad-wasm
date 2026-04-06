@@ -34,7 +34,7 @@ DOCKER_OCI_BASE ?= .oci.wasm-base$(VARIANT)-$(ENV)
 
 # Use the arm64 version of the emscripten sdk if running on an arm64 machine, as the amd64 image would crash QEMU in a couple of places.
 # See latest version in https://hub.docker.com/r/emscripten/emsdk/tags
-EMSCRIPTEN_VERSION ?= 4.0.10
+EMSCRIPTEN_VERSION ?= 3.1.34
 UNAME_MACHINE := $(shell uname -m)
 ifeq ($(UNAME_MACHINE),arm64)
     EMSCRIPTEN_SDK_TAG=emscripten/emsdk:$(EMSCRIPTEN_VERSION)-arm64
