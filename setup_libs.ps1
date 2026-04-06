@@ -28,7 +28,7 @@ Git-Clone-If-Missing "libs/glib" "https://github.com/kleisauke/glib.git" "$SHALL
 Git-Clone-If-Missing "libs/harfbuzz" "https://github.com/harfbuzz/harfbuzz.git" "$SHALLOW --branch 8.3.0 --single-branch"
 Git-Clone-If-Missing "libs/lib3mf" "https://github.com/3MFConsortium/lib3mf.git" "$SHALLOW --branch v2.3.2 --recurse-submodules"
 Git-Clone-If-Missing "libs/libexpat" "https://github.com/libexpat/libexpat" "$SHALLOW --branch R_2_5_0 --single-branch"
-Git-Clone-If-Missing "libs/liblzma" "https://github.com/kobolabs/liblzma.git" "$SHALLOW --branch v5.4.1 --single-branch"
+Git-Clone-If-Missing "libs/liblzma" "https://github.com/tukaani-project/xz.git" "$SHALLOW --branch v5.4.1 --single-branch"
 Git-Clone-If-Missing "libs/libzip" "https://github.com/nih-at/libzip.git" "$SHALLOW --branch v1.10.1 --single-branch"
 Git-Clone-If-Missing "libs/zlib" "https://github.com/madler/zlib.git" "$SHALLOW --branch v1.2.13 --single-branch"
 Git-Clone-If-Missing "libs/libxml2" "https://gitlab.gnome.org/GNOME/libxml2.git" "$SHALLOW --branch v2.12.5 --single-branch"

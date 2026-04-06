@@ -135,7 +135,7 @@ FROM builder AS libffi
 COPY libffi .
 RUN ./autogen.sh && \
     emconfigure ./configure \
-      --host wasm32-unknown-linux \
+      --host none \
       --prefix=/emsdk/upstream/emscripten/cache/sysroot \
       --enable-static \
       --disable-shared \
