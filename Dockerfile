@@ -22,5 +22,6 @@ RUN emcmake cmake -B ../build . \
         -DEXPERIMENTAL=ON \
         -DSNAPSHOT=ON \
         -DENABLE_3MF=ON \
+        -DENABLE_MANIFOLD=ON \
         -G Ninja && \
     cmake --build ../build --parallel
