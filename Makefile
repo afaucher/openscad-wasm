@@ -202,7 +202,7 @@ libs/libzip:
 	git clone https://github.com/nih-at/libzip.git ${SHALLOW} ${SINGLE_BRANCH_MAIN} $@
 
 libs/zlib:
-	git clone https://github.com/madler/zlib.git ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://github.com/madler/zlib.git ${SHALLOW} --branch v1.2.13 --single-branch $@
 
 libs/libxml2:
 	git clone https://gitlab.gnome.org/GNOME/libxml2.git ${SHALLOW} ${SINGLE_BRANCH} $@
