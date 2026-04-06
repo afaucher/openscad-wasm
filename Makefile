@@ -208,7 +208,7 @@ libs/libxml2:
 	git clone https://gitlab.gnome.org/GNOME/libxml2.git ${SHALLOW} ${SINGLE_BRANCH} $@
 
 libs/doubleconversion:
-	git clone https://github.com/google/double-conversion ${SHALLOW} ${SINGLE_BRANCH} $@
+	git clone https://github.com/google/double-conversion ${SHALLOW} --branch v3.3.1 --single-branch $@
 
 libs/openscad:
 	git clone --recurse https://github.com/openscad/openscad.git ${SHALLOW} ${SINGLE_BRANCH} $@
