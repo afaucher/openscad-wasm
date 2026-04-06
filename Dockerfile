@@ -21,5 +21,6 @@ RUN emcmake cmake -B ../build . \
         -DCMAKE_BUILD_PARALLEL_LEVEL=${CMAKE_BUILD_PARALLEL_LEVEL} \
         -DEXPERIMENTAL=ON \
         -DSNAPSHOT=ON \
+        -DENABLE_3MF=ON \
         -G Ninja && \
     cmake --build ../build --parallel
